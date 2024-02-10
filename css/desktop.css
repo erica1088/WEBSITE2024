@@ -1,0 +1,23 @@
+
+@media screen and (min-width: 1024px)
+{
+    .iconm{
+        display: none;
+  
+    }
+    
+    
+    
+    
+    .nav-list{
+       
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-right: 20px;
+      
+    }
+    
+}
+
+

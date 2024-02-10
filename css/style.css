@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url(./normalize.css);  
+
+@import url(./mobile.css) screen and (min-width: 500px); 
+
+
+@import url(./tablet.css) screen and (min-width: 768px); 
+
+
+
+@import url(./desktop.css) screen and (min-width: 1024px);
+
+
+
+
+:root{
+ 
+    --primary-font:'Roboto', sans-serif;
+    --second-font:'Oswald', sans-serif;
+    --color:black;
+    --secondcolor:#b39c97;
+    --bg:#ffff;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
