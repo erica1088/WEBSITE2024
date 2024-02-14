@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&family=Oswald:wght@300&family=Roboto:wght@500&display=swap');
 @import url(./normalize.css);  
 
 @import url(./mobile.css) screen and (min-width: 500px); 
@@ -19,6 +20,7 @@
 :root{
  
     --primary-font:'Roboto', sans-serif;
+    --font:'Mulish', sans-serif;
     --second-font:'Oswald', sans-serif;
     --color:black;
     --secondcolor:#b39c97;
@@ -29,4 +31,440 @@
 html{
     scroll-behavior: smooth;
 }
+
+/* HERO */
+
+.hero{
+    background-image: url(/img/kam-idris-_HqHX3LBN18-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    opacity: 0.82;
+    height: 100vh;
+    padding: .1px;
+    display: flex;
+    justify-content:center;
+    align-items: center;  
+    align-self: flex-start;
+   
+}
+
+/* LOGO */
+
+
+
+
+.logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color);
+    font-weight: bold; 
+    font-family: var(--font);
+    padding: 20px; 
+    cursor: pointer;
+    transition: all 0.2s;
+
+
+}
+ 
+.logo a:hover{
+ transform: scale(1.2);
+}
+
+
+
+
+
+
+/* NAV */
+nav{
+    width: 100%;
+    background-color: var(--secondcolor);
+    height: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    align-self: flex-start;
+
+   
+}
+
+
+/* LOGO */
+
+.logo .iconm{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 50%;
+}
+
+
+
+
+
+.iconm a i{
+    padding: 20px;
+}
+
+
+
+.nav-list{
+    
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+.nav-list li a{
+
+    text-decoration: none;
+  
+    color: var(--color);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#menu ul {
+    list-style:none;
+    
+    
+   
+}
+
+
+    
+   
+#menu:target .nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-color: var(--secondcolor);
+    margin: 0 ;
+   
+}
+
+
+.close{
+    display: none;
+}
+
+#menu:target .open{
+    display: none;
+}
+
+#menu:target .close{
+    display: block;
+    color: #fff;
+}
+
+
+
+/* BANNER */
+.banner{
+text-align: center;
+  
+
+
+}
+
+
+.banner h1{
+    text-align: center;
+    margin-bottom: 0 ;
+    font-size: 50px;
+}
+
+.banner p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* CARDS */
+
+.linea {
+    text-align: center;
+}
+
+
+
+.cards-productos{
+    width: 100%;
+    
+    margin-top: 30px;
+    
+  
+}
+
+.container{
+    width: 100%; 
+    flex-wrap: wrap;  
+    display: flex; 
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px; 
+     gap: 20px;
+    
+     overflow: hidden;
+   
+}
+
+.container-card{
+    width: 180px;
+    display: flex;
+  
+    overflow: hidden;
+    align-items: center;
+
+    padding: 10px 10px 10px 10px;
+    border-radius: 0.3rem;
+    box-shadow: 0 1rem 1rem rgba(143, 141, 141, 0.4);
+    cursor: pointer;
+}
+
+.card-img{
+    width: 100%;
+ 
+    overflow: hidden;
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.card__h3{
+    font-size: 11px;
+    font-family: var(--second-font);
+}
+
+
+.card__btn{
+   background-color: #ccc4c18c;
+   color: black;
+   border-radius: 3px;
+   padding: 4px 10px;
+   margin: 0 10px;
+   cursor: pointer;
+   
+}
+
+.card__btn:hover{
+    transform: scale(1.3);
+    background-color: #b39c97;
+
+}
+
+
+hr{
+   margin: 20px;
+}
+
+
+
+/* NEW IN */
+
+
+.new-container{
+    width: 100%;
+  
+}
+
+.img-cortinas{
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+    margin: 20px;
+}
+
+.parrafo-cortinas{
+    font-family: var(--font);
+    font-family:600px;
+    margin:20px;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color:  rgba(152, 152, 152, 0.187);
+    display: flex;
+    justify-content: center;
+   
+ 
+
+}
+
+.footer-links{
+   width: 100%;
+
+
+ 
+
+   
+} 
+
+.footer-links h4{
+    font-size: 18px;
+   font-family: var(--second-font);
+   text-transform: uppercase;
+   margin: 20px;
+ 
+  
+}
+
+
+.footer-a{
+    display: flex;
+     gap: 5px;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+    /* padding: 10px; */
+}
+.footer-links a{
+  color: black;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.footer-links i{
+    font-size: 16px;
+   
+}
+/* 
+FORMULARIO */
+
+
+
+
+#hero-contacto{
+    width: 100%;
+   height: 200px;
+   padding: .1px;
+}
+
+
+.formulario{
+  
+   width: 100%;
+   height: 100dvh;
+
+    padding: 90px;
+
+    
+}
+
+
+form{
+    
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+   
+}
+
+.input-contacto{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h4{
+    color: #283629;
+    font-size: 35px;
+}
+
+label{
+    color: #283629;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #e0e8e797;
+    border: 2px solid #e4eee5c9;
+
+}
+
+input::placeholder, textarea::placeholder{
+   
+}
+
+
+
+.btnf{
+    font-size: 16px;
+    color: #ffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: var(--secondcolor);
+    box-shadow: 0 0 20px var(--secondcolor);
+    cursor: pointer;
+}
+
+.btnf:hover{
+    background-color: antiquewhite;
+}
+
+
+.contactos-form {
+    display: grid;
+    
+}
+
+/* NOSOTROS */
+
+
+
+.nosotros{
+    width: 100%;
+    height: 100dvh;
+    margin: 10px;
+  
+ 
+    /* margin: 20px; */
+}
+
+.parrafo-nosotros{
+  font-family: var(--font);
+  overflow: hidden;
+  font-size: 15px;
+  font-weight:500;
+  
+}
+
+.img-nosotros{
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    
+} 
+
 
