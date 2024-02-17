@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" href="/img/icons8-salón-100.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/mobile.css">
@@ -14,7 +15,7 @@
     <title>Charm Home</title>
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" id="Home">
        <nav id="menu">
            <div class="logo">
                <a href="#">Charm Home</a>
@@ -29,10 +30,10 @@
  
             <ul class="nav-list">    
               <li><a href="#">Home</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Productos</a></li>
-              <li><a href="#">New in</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="#Productos">Productos</a></li>
+              <li><a href="#newin">New in</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
           <div class="banner">
@@ -43,86 +44,84 @@
 
     </header>
 
-    <!-- <section class="banner">
-      <h1>Charm Home</h1>
-     
-     </section> -->
+   
   
 
  
 
-<hr>
+ <hr>
 
-  <main>
-    <section class="cards-productos" >
-        <h2 class="linea"><span>Nuestros Productos</span></h2>
-      <div class="container" >
-          <div class="container-card"> 
-            <div class="card">
-              <img class="card-img" src="/img/sillon gervasoni.jpg" alt="">
-              <div class="">
-                <h3 class="card__h3">Sillon Gervasoni</h3>
-               
-                <button class="card__btn">Consultar</button>
-              </div>
-            </div>
-          </div>
 
-         
-          <div class="container" >
-              <div class="container-card"> 
-                <div class="card">
-                  <img class="card-img" src="./img/sillon poltrona.jpg" alt="dino">
-                  <div class="">
-                    <h3 class="card__h3">Poltronas</h3>
-                   
-                    <button class="card__btn">Consultar</button>
-                  </div>
-                </div>
-              </div>
 
-         
-            
-              <div class="container" >
-                  <div class="container-card"> 
-                    <div class="card">
-                      <img class="card-img" src="./img/lamparas.png" alt="dino">
-                      <div class="">
-                        <h3 class="card__h3">Iluminación</h3>
-                       
-                        <button class="card__btn">Consultar</button>
-                      </div>
-                    </div>
-                  </div>
+ <main class="cards">
+    <h2 class="linea"><span>Nuestros Productos</span></h2>
+    <section class="cards-productos" id="Productos" >
+   
+      <div class="gallery">
+        <figure class="gallery_picture">
+          <img src="/img/sillonluisXV.jpg" class="gallery-img" alt="img_card1"loading="lazy">
+        </figure>
+        <h2>Sillon LuisXV</h2>
+        <button class="card_btn">Consultanos</button>
+      </div>
+      
 
-                  <div class="container" >
-                    <div class="container-card"> 
-                      <div class="card">
-                        <img class="card-img" src="./img/mesa petiribi.jpg" alt="dino">
-                        <div class="card__content">
-                          <h3 class="card__h3">Mesas de Petiribi</h3>
-                         
-                          <button class="card__btn">Consultar</button>
-                        </div>
-                      </div>
-                    </div>
-              </div>
-     </section>
+      <div class="gallery">
+        <figure class="gallery_picture" >
+            <img src="/img/sillonrattan.jpg" class="gallery-img" alt="img_card1"loading="lazy">
+        </figure>
+        <h2>Sillon Rattan</h2>
+        <button class="card_btn">Consultanos</button>
+      </div>
+      
+      <div class="gallery">
+        <figure class="gallery_picture">
+            <img src="/img/lamparas.png" class="gallery-img" alt="img_card1"loading="lazy">
+        </figure>
+        <h2>Iluminación</h2>
+        <button class="card_btn">Consultanos</button>
+      </div>
+      
+      <div class="gallery">
+        <figure class="gallery_picture">
+            <img src="/img/sillonblanco.jpg" class="gallery-img" alt="img_card1"loading="lazy">
+        </figure>
+        <h2>Sillones</h2>
+        <button class="card_btn">Consultanos</button>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery_picture">
+            <img src="/img/sillon gervasoni.jpg" class="gallery-img" alt="img_card1"loading="lazy">
+        </figure>
+        <h2>Gervasoni</h2>
+        <button class="card_btn">Consultanos</button>
+      </div>
+      <div class="gallery">
+        <figure class="gallery_picture">
+            <img src="/img/mesa petiribi.jpg" class="gallery-img" alt="img_card1"loading="lazy">
+        </figure>
+        <h2>Gervasoni</h2>
+        <button class="card_btn">Consultanos</button>
+      </div>                 
+    
+    </section> 
 
      <hr>
      
-     <section class="new-container">
-      <h2 class="linea"><span> New in</span></h2>
-      <img src="/img/cortinas.jpg" class="img-cortinas" alt="cortinas">
-      <p class="parrafo-cortinas">Consultanos por nuestras Cortinas de Gasa Pañalera.</p>
-
-     </section>
+      <section class="new-container" id="newin">
+         <h2 class="linea"><span>New in</span></h2>
+         <figure class="cor">
+           <img src="/img/cortinas.jpg" class="img-cortinas" alt="cortinas">
+          </figure>
+           <p class="parrafo-cortinas"> Consultanos por nuestras Cortinas de Gasa Pañalera confeccionadas a medida.</p>
+      </section> 
      
 
-   </main>
+  </main>
 
 
-<hr>
+ <hr>
 
     <footer>
          <div class="footer-links">
@@ -135,9 +134,18 @@
                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+               
            </div>
+          
          </div>
+        
+      
     </footer>
-
- </body>
+   <div class="derechos">
+    <p class="p-derechos">&copy; Erica Acosta. Todos los derechos reservados.</p>
+    <div id="botonarriba"><a href="#Home"><img src="/img/flecha.png" class="flecha-arriba" alt=""></a></div>
+  </div>
+  
+    
+</body>
 </html>
