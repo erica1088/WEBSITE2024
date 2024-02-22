@@ -4,22 +4,196 @@
 
 
 
-@media screen and (min-width: 500px)
 
 
-{
 
+
+
+
+
+@media screen and (min-width: 320px), (min-width: 520px)
+ {
     html{
         scroll-behavior: smooth;
+    }
+    
+    
+    .hero{
+        height: 100dvh;
+    }
+    
+    .logo a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 18px;
+        color: var(--color);
+        font-weight: bold; 
+        font-family: var(--font);
+        padding: 20px; 
+        cursor: pointer;
+        transition: all 0.2s;
+     
+    
+    }
+     
+     
+    
+    
+     .logo a:hover{
+     transform: scale(1.2);
+     transform: translateX(20px);
+    }
+
+     
+    
+    
+    
+    
+    /* NAV */
+     nav{
+       
+       width: 100%;
+        background-color: var(--secondcolor);
+        height: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: fixed;
+        align-self: flex-start; 
+    
+       
+    }  
+
+   
+    /* LOGO */
+     
+     .logo {
+        display: flex;
+        align-items: center;
+         height: 100%;
+        /* width: 50%; */
+    } 
+    
+     
+    
+     .iconm{
+     
+       display: flex;
+    
+       justify-content: flex-end; 
+       height: 100%;
+    }
+    
+    .iconm a i{
+         padding: 20px; 
+    }
+     
+    
+   
+      
+    .nav-list{
+        display: none;
+ 
+    
+    
+    } 
+    
+    
+    
+    .nav-list li a{ 
+    
+        text-decoration: none;
+        color: var(--color);
+        font-size: 1.3em;
+     
+    
+     
+    }
+     
+
+   
+     #menu ul {
+       list-style:none;
+        
+    }  
+    
+    
+        
+       
+     #menu:target .nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 25px; 
+        width: 100%;
+      height: 100dvh;
+        padding: 10px; 
+        background-color: var(--secondcolor);
+         margin: 0  ;  
+    
+       
+    }  
+    
+    
+    .close{
+        display: none;
        
     }
-   
+    
+    #menu:target .open{
+        display: none;
+    
+    } 
+    
+     #menu:target .close{
+        display: block;
+        color: #fff;
+    }
+ 
 
-
+    
+    
+    /* BANNER */
+    .banner{
+    
+    text-align: center;
+    transition: all .3s linear; 
+    transition-property: all;
+    transition-delay: .1s;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.69, cubic-bezier(0.95, 0.05, 0.795, 0.035));
+  
+    }
+  
+    .banner:hover{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: aliceblue;
+  
+     }
+    .banner h1{
+      text-align: center;
+      margin-bottom: 0 ;
+      font-size: 60px;
+      cursor: pointer;
+      
+      } 
+  
+  
+  
+  
+  .banner p{
+      font-size: 20px;
+      font-weight: 500;
+     }
+  
+  
+    
 
 
     .cards-productos{
-        /* width:100%; */
+        width:100%; 
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;  
@@ -73,47 +247,195 @@
          background-color: #404343;
         font-family: 'Oswald', sans-serif;
        
-       }
+    }
 
 
 
-
-
-
+    .nosotros-container{
    
-    .formulario{
+      
         
+    }
+    
+    
+    .nosotros{
+        display: flex;
+
+
+    }
+
+    .img-nosotros{
+        padding: 30px;
+        
+       
+      
+    }
+    
+    .nosotros-parrafo{
+        width: 100%;
+        height: 300px;
+        gap: 30px;
+        max-width: 70pc;
+    
+      
+    } 
+
+    
+    .new-container{
+
+        width: 100%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+       
+  
+    }
+    
+    .new-img{
+     width:250px;
+    
+
+          
+    
+    }
+    
+    .img-ingreso{
+    
+     width: 250px;
+    
+     border-radius: 50%;
+    
+        
+    }
+    
+    .cards-titulo{
+        font-size: 20px;
+       text-align: center;
+      text-transform: uppercase;
+      
+    
+    }
+    
+    .formulario{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+     
+    
+    }
+    
+    
+    
+    form{
+       width: 350px;
+       
+       margin: auto; 
+       background:#e9e6e6ee;
+       padding: 10px 20px;
+       box-sizing: border-box;
+       margin-top: 20px;
+       border-radius: 7px;
+      
+        
+    }
+    
+     
+    h2{
+        color: var(--bg);
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+        
+    }
+    
+    input, textarea{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+       
+    }
+    
+    
+    
+    textarea{
+        min-height:100px ;
+        max-height: 200px;
+        max-width: 100%;
+    }
+    
+    .iframe-form{
+     padding: 20px;
+       
+    }
+    
+    iframe{
+        max-width:250px ;
+        max-height:250px ;
+    }
+    
+    .iframe-form p{
+      text-align: center;
+    }
+    
+
+        
+        
+        
+        
+        
+   
+   
+
+    footer{
+        width: 100%;
+        height: 3cqmin;
+        background-color:  rgba(152, 152, 152, 0.187);
+       
+     
+    
+    }
+    
+    .footer-links{
+       
+    }
+    
+       
+     } 
+    
+    .footer-links h4{
+        font-size: 18px;
+       font-family: var(--second-font);
+       text-transform: uppercase;
+        /* margin: 25px; */
+       
+      
+     }
+    
+    
+    .footer-a{
+        display: flex;
+         gap: 10px;
+        /* margin: 10px; */
+      
+    } 
+     .footer-links a{
+      color: black;
+      cursor: pointer;
+      margin: 10px;
+    }
+    
+    .footer-links i{
+        font-size: 25px;
        
     } 
     
-    .iframe-form{
-        width: 100%;
-        height: 450px;
-       
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-       
-    }
-
     
-    .iframe-form p{
-        overflow: hidden;
-        font-size: 20px;
-        font-weight: bold;
-        color: #ffff;
-       
-    }
-    
-    .container{
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-    }
     
 }
 

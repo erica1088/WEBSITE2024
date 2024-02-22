@@ -4,15 +4,35 @@
     html{
         scroll-behavior: smooth;
     }
-
-    .iconm{
-        display: none;
-
-    }
-
-    .cards{
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+  
+    
+   
+    
+    
+  
+    
+    
         
-    }
+       
+    
+    
+    
+   
+    
 
     .cards-productos{
          width:100%; 
@@ -73,12 +93,53 @@
         font-family: 'Oswald', sans-serif;
        
        }
-    
 
+
+
+
+
+       
+       }
+       .nosotros{
+          width: 100%;
+           display: flex;
+           flex-wrap: wrap;
+          
+           
+          
+         
+       }
+       
+       .img-nosotros{
+     
+       width: 100%;
+       
+       }
+
+      
+       .nosotros-parrafo{
+   
+   
+       background-color: var(--bg);
+       font-size: 20px;
+       font-family: var(--font);
+        max-width: 70pc;
+      
+    
+       }
+       .nosotros-parrafo p:first-child{
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+      
+    
+    }
+  
+     
 
     .new-container{
         width: 100%;
-        background-color: rgba(238, 238, 230, 0.895);
+     
 
     }
 
@@ -86,9 +147,6 @@
         width: 50%;
         overflow: hidden;
         height: 250px;
-        margin-left: 190px;
-        box-shadow: 0 1rem 1rem rgba(143, 141, 141, 0.4);
-        background-size: cover;
 
     }
 
@@ -101,19 +159,100 @@
         margin:20px;
     }
 
+    
+    .formulario{
+       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     
+    
+    }
+    
+    
+    
+    form{
+       width: 350px;
+     
+       margin: auto; 
+       background:#e9e6e6ee;
+       padding: 10px 20px;
+       box-sizing: border-box;
+       margin-top: 20px;
+       border-radius: 7px;
+      
+        
+    }
+    
+     
+    h2{
+        color: var(--bg);
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+        
+    }
+    
+    input, textarea{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+       
+    }
+    
+    
+    
+    textarea{
+        min-height:100px ;
+        max-height: 200px;
+        max-width: 100%;
+    }
+    
+    .iframe-form{
+     padding: 20px;
+       
+    }
+    
+    iframe{
+        max-width:250px ;
+        max-height:250px ;
+    }
+    
+    .iframe-form p{
+      text-align: center;
+    }
+    
+        
+       
+        
+        
+       
+        
+        
+        
+     
+           
+            
 
 
 
     footer{
-        width: 100%;
-        height: 350px;
+        width: 100%; 
+        height: 250px;
        
 
     }
 
     .footer-links{
         display: flex;
-        display:inline;
+      flex-wrap: wrap;
+      flex: content;
+      padding: 20px;
+      justify-content: center;
+        
     }
 
     .footer-links i{
@@ -131,97 +270,16 @@
 
 
 
-    .parrafo-nosotros{
-        max-width: 70pc;
-    }
+    
 
 
 
-    form{
+   
 
-        padding: 20px 20px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        border-radius: 20px;
-        text-align: center;
-        width: 280px;
-
-
-    }
-
-    .input-contacto{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-
-    h4{
-        color: #283629;
-        font-size: 25px;
-    }
-
-    label{
-        color: #283629;
-        font-size: 11px;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-
-    input, textarea{
-        padding: 10px 10px;
-        border-radius: 25px;
-        margin-bottom: 8px;
-        background-color: #e0e8e797;
-        border: 2px solid #e4eee5c9;
-
-    }
+    
 
 
 
-    .btnf{
-        font-size: 11px;
-        color: #ffff;
-        border: 0;
-        border-radius: 20px;
-        background-color: var(--secondcolor);
-        box-shadow: 0 0 20px var(--secondcolor);
-        cursor: pointer;
-    }
-
-    .btnf:hover{
-        background-color: antiquewhite;
-    }
-
-
-
-    .iframe-form{
-        width: 100%;
-
-        display: flex;
-       justify-content: center;
-        align-items: center;
-        align-content: center;
-
-
-    }
-
-
-
-    .iframe-form p{
-        overflow: hidden;
-        font-size: 20px;
-        font-weight: bold;
-        color: #ffff;
-
-    }
-
-
-
-    .container{
-        display: flex;
-        
-
-    }
-
-
-
+    
+    
 }
